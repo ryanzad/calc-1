@@ -62,7 +62,7 @@ func shouldSecondEvaluatedFirst(first: String, second: String) -> Bool{
     }
 }
 
-//function to perfoem operations
+//function to perform operations
 func performOperations(){
     let i:Int = 0
     while i < ops.count-1 {
