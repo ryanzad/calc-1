@@ -8,14 +8,14 @@
 
 import Foundation
 
-var nums: [Int32] = []
+var nums: [Int64] = []
 var ops: [String] = []
-var result: Int32 = 0
+var result: Int64 = 0
 var stderr = FileHandle.standardError
 let stdout = FileHandle.standardOutput
 
 // function to calculate actual operation between 2 numbers
-func calculate(num1: Int32, op: String, num2: Int32) -> Int32 {
+func calculate(num1: Int64, op: String, num2: Int64) -> Int64 {
     switch op {
     case "+":
         return num1 + num2
@@ -84,9 +84,9 @@ func executeOneOperator(i: Int){
     performOperations();
 }
 
-//function to convert string to Int32
-func convertStringToInt(s: String) -> Int32 {
-    if let number = Int32(s as String) {
+//function to convert string to Int64
+func convertStringToInt(s: String) -> Int64 {
+    if let number = Int64(s as String) {
         return number
     }
     writeError(s: "invalid input")
